@@ -1,7 +1,8 @@
 <template>
-  <div class="bg-white items-center   flex justify-center h-2/3 mt-20 flex-col">
+  <div class="bg-white items-center flex justify-center max-h-screen  h-screen flex-col">
+    <div class="font-bold text-[60px]">TodoApp</div>
     <div
-      class="shadow-md flex-col flex rounded-[8px]   border-4 overflow-hidden w-[500px] h-[500px]  "
+      class="shadow-md flex-col flex rounded-[8px] border-4 border-white overflow-scroll overflow-x-hidden overflow-y-hidden xl:w-[500px] h-[500px] lg: w-[100%]"
     >
       <div class="relative bg-violet-200">
         <div class="flex text-white px-6 py-10 gap-2">
@@ -42,7 +43,7 @@
           >Not Done</span
         >
       </div>
-      <div class="overflow-scroll">
+      <div class="overflow-scroll overflow-x-hidden">
         <div class="flex flex-col justify-center" v-if="etat == 'tout'">
           <VTasks
             class=""
@@ -63,10 +64,9 @@
             @clickElement="toggleTodo"
             @deleteElement="deleteTasks"
             @updateElement="updaTe"
-
           />
         </div>
-        <div class="flex flex-col justify-center" v-if="etat == 'nofait'">
+        <div class="flex flex-col justify-center " v-if="etat == 'nofait'">
           <VTasks
             class=""
             :todo="todo"
@@ -75,7 +75,6 @@
             @clickElement="toggleTodo"
             @deleteElement="deleteTasks"
             @updateElement="updaTe"
-
           />
         </div>
       </div>
@@ -129,10 +128,10 @@ function deleteTasks(todo) {
   localStorage.setItem("allTodo", JSON.stringify(allToDo.value));
 }
 
-function updaTe(todo){
+function updaTe(todo) {
   isClick.value = true;
 
-  deleteTasks(todo)
+  deleteTasks(todo);
 }
 
 function addToDo(todo) {
