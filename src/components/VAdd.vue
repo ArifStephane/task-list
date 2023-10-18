@@ -7,8 +7,8 @@
         name="in"
         class="border-blue-400 border rounded"
       />
-      <button class="px-2 py-1 rounded text-white bg-blue-500" type="submit">
-        Add
+      <button class="px-2 py-1 font-bold rounded text-white bg-blue-500" type="submit">
+        Add task
       </button>
     </form>
   </div>
@@ -16,7 +16,7 @@
 <script setup>
 import { ref, defineProps } from "vue";
 defineProps(["isClick"]);
-const todo = ref({ state: "progress", label: "" });
+const todo = ref({ state: "progress", label: ""});
 const emits = defineEmits(["addElement"]);
 
 function emitAddElementEvent() {
