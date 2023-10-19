@@ -38,9 +38,5 @@ npm run test:unit
 
 ```sh
 npm run lint
-```
-![1](https://user-images.githubusercontent.com/87428073/214101646-a8d8dcfb-9ff0-4794-b6e9-25171857577e.png)
-![2](https://user-images.githubusercontent.com/87428073/214101714-be257c69-dc1e-4671-9359-3e3a9148fe73.png)
-![3](https://user-images.githubusercontent.com/87428073/214101749-e1f27670-7ab9-470d-96f8-c1654ca1996d.png)
-![4](https://user-images.githubusercontent.com/87428073/214101787-e443113a-5c97-4835-8bdd-d0365fe5859e.png) 
+``` 
 
