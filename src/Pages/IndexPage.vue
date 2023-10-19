@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-white items-center flex justify-center max-h-screen  h-screen flex-col">
+  <div
+    class="bg-white items-center flex justify-center max-h-screen h-screen flex-col"
+  >
     <div class="font-bold text-[60px]">TodoApp</div>
     <div
       class="shadow-md flex-col flex rounded-[8px] border-4 border-white overflow-scroll overflow-x-hidden overflow-y-hidden xl:w-[500px] h-[500px] lg: w-[100%]"
@@ -66,7 +68,7 @@
             @updateElement="updaTe"
           />
         </div>
-        <div class="flex flex-col justify-center " v-if="etat == 'nofait'">
+        <div class="flex flex-col justify-center" v-if="etat == 'nofait'">
           <VTasks
             class=""
             :todo="todo"
